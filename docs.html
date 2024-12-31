@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Special Message</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <!-- Background Sound -->
+    <audio id="backgroundSound" autoplay loop>
+        <source src="Dionela - Musika (Official Lyric Video).mp3" type="audio/mp3">
+    </audio>
+
+    <div class="container">
+        <div class="form-container">
+            <h1>TO MY ONE AND ONLY LOVE  </h1>
+            <form id="messageForm" onsubmit="return submitMessage(event)">
+                <input type="text" id="nameInput" placeholder="Your name" required>
+                <br>
+                <button type="submit">Send Message</button>
+            </form>
+            <!-- Music Status -->
+            <div id="musicStatus">
+                <span id="musicStatusText">Music is playing...</span>
+                <button id="toggleMusicBtn" onclick="toggleMusic()">Pause Music</button>
+            </div>
+            <!-- The special message will appear here -->
+            <div id="message" class="message"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
